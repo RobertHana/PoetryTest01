@@ -4,12 +4,15 @@ version = "0.1.0"
 description = ""
 authors = ["Robert B. Hanviriyapunt <RobertHana@Mac.com>"]
 readme = "README.md"
+packages = [
+    { include = "poetrytest01", from = "src" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 
 [tool.poetry.scripts]
-poetry-test-01 = "main:main"
+poetry-test-01 = "poetrytest01.main:main"
 
 
 [build-system]
